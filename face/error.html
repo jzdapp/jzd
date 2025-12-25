@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSS静态网站托管示例</title>
+    <style>
+        /* --- 全局样式与字体 --- */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* --- 背景与布局 --- */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f8fa;
+            background-image: radial-gradient(circle at center, #ffffff 0%, #f7f8fa 80%);
+            overflow: hidden;
+        }
+
+        /* --- 内容容器 --- */
+        .container {
+            text-align: center;
+            padding: 3rem 2rem;
+            max-width: 800px;
+        }
+
+        /* --- 主标题容器 --- */
+        h1 {
+            margin: 0 0 2.5rem 0;
+            line-height: 1.2;
+        }
+        
+        /* --- 主标题（多行样式） --- */
+        .headline-main {
+            display: block;
+            font-size: 3rem;
+            font-weight: 600;
+            color: #111;
+        }
+        
+        .headline-sub {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #444;
+            margin-top: 0.5rem;
+        }
+
+        /* --- 按钮容器 --- */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* --- 通用按钮样式 --- */
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            white-space: nowrap;
+            /* --- 新增样式以统一宽度 --- */
+            min-width: 10rem;
+            box-sizing: border-box;
+        }
+
+        /* --- 主按钮样式 (橙色实心) --- */
+        .btn-primary {
+            background-color: #FF6A00;
+            color: #fff;
+            border-color: #FF6A00;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8428;
+            border-color: #ff8428;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(255, 106, 0, 0.2);
+        }
+
+        /* --- 次要按钮样式 (橙色线框) --- */
+        .btn-secondary {
+            background-color: transparent;
+            color: #FF6A00;
+            border-color: #FF6A00;
+        }
+
+        .btn-secondary:hover {
+            background-color: #FF6A00;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(255, 106, 0, 0.2);
+        }
+
+        /* --- 响应式设计：针对移动设备 --- */
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            h1 {
+                margin-bottom: 2rem;
+            }
+            
+            .headline-main {
+                font-size: 2.2rem;
+            }
+
+            .headline-sub {
+                font-size: 1.3rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            <span class="headline-main">欢迎来到 OSS</span>
+            <span class="headline-sub">这是一个 404 页面</span>
+        </h1>
+    </div>
+
+</body>
+</html>
